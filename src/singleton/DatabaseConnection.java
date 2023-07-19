@@ -1,6 +1,6 @@
 package singleton;
 
-public class NetworkCall {
+public class DatabaseConnection {
 
     /**
      * This is a singleton class.
@@ -9,21 +9,21 @@ public class NetworkCall {
      */
 
     // Instance of this class must be in private in singleton class
-    private static NetworkCall instance;
+    private static DatabaseConnection instance;
 
     // Constructor must be in private in singleton class
-    private NetworkCall() {
+    private DatabaseConnection() {
     }
 
-    public static NetworkCall getInstance() {
+    public static synchronized DatabaseConnection getInstance() {
         if (instance == null) {
-            instance = new NetworkCall();
+            instance = new DatabaseConnection();
         }
         return instance;
     }
 
-    public void doNetworkCall(){
-        System.out.println("Doing network call..");
+    public void getUser(){
+        System.out.println("User");
     }
 
 }
