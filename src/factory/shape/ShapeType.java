@@ -1,4 +1,4 @@
-package factory;
+package factory.shape;
 
 public enum ShapeType {
     CIRCLE,

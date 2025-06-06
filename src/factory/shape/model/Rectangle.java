@@ -1,4 +1,4 @@
-package factory;
+package factory.shape.model;
 
 public class Rectangle implements Shape{
     @Override

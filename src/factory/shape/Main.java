@@ -1,6 +1,9 @@
-package factory;
+package factory.shape;
 
-public class FactoryPatternExample {
+import factory.shape.component.ShapeFactory;
+import factory.shape.model.Shape;
+
+public class Main {
 
     /**
      * The Factory pattern provides an interface for creating objects
