@@ -6,7 +6,7 @@ import observer.utils.PrintHelper;
 public class SMSNotification implements Notification {
     @Override
     public void send(String message) {
-        PrintHelper.printHeader("Sending SMS: " + message);
+        PrintHelper.printHeader("\uD83D\uDCF1 Sending SMS: " + message);
     }
 }
 

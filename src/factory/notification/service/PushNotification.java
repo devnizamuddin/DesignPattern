@@ -6,7 +6,7 @@ import observer.utils.PrintHelper;
 public class PushNotification implements Notification {
     @Override
     public void send(String message) {
-        PrintHelper.printHeader("Sending PUSH: " + message);
+        PrintHelper.printHeader("\uD83D\uDD14 Sending PUSH: " + message);
     }
 }
 

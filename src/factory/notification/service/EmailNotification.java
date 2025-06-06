@@ -6,7 +6,7 @@ import observer.utils.PrintHelper;
 public class EmailNotification implements Notification {
     @Override
     public void send(String message) {
-        PrintHelper.printHeader("Sending EMAIL: " + message);
+        PrintHelper.printHeader("\uD83D\uDCE7 Sending EMAIL: " + message);
     }
 }
 
