@@ -1,5 +1,7 @@
 package observer.basic;
 
+import observer.utils.PrintHelper;
+
 /**
  * Represents a subscriber (observer) to the NizamLearningChannel.
  * This class holds subscriber information and defines how they get notified.
@@ -15,6 +17,7 @@ public class SubscriberModel {
      * @param name the name of the subscriber
      */
     public SubscriberModel(String name) {
+        PrintHelper.printHeader(" \uD83D\uDC68\u200D\uD83D\uDCBB "+name+" user created! ✅");
         this.name = name;
     }
 
@@ -34,6 +37,10 @@ public class SubscriberModel {
      */
     public void subscribeChannel(NizamLearningChannel channel) {
         channel.addSubscriber(this);
+    }
+
+    public void unSubscribeChannel(NizamLearningChannel channel) {
+        channel.removeSubscriber(this);
     }
 
     /**

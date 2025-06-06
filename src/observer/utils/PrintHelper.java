@@ -9,12 +9,12 @@ public class PrintHelper {
     }
 
     public static void printImportantNews(String title, String body) {
-        System.out.println("\n\n==================================================================================\n\n");
+        System.out.println("\n==================================================================================\n");
 
         System.out.println("                       " + title);
-        System.out.println("\n\n" + body);
+        System.out.println("\n" + body);
 
-        System.out.println("\n\n==================================================================================\n\n");
+        System.out.println("\n==================================================================================\n");
 
     }
 }

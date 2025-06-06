@@ -55,6 +55,7 @@ public class NizamLearningChannel {
      * @param subscriber the subscriber to be removed
      */
     public void removeSubscriber(SubscriberModel subscriber) {
+        PrintHelper.printHeader(subscriber.getName() + " - removed " + " as a subscriber.");
         subscribers.remove(subscriber);
     }
 
